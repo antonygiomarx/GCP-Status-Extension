@@ -1,15 +1,5 @@
-const appDate = document.getElementById("date");
-const appServices = document.getElementById("services");
-const today = moment().format("MMM Do YY");
-let services;
+import Gcp from "https://github.com/antonygiomarx/GCP-Status-Extension/blob/master/dist/app.js";
 
-appDate.innerHTML = `${today}`;
+const gcp = new Gcp();
 
-$.get(
-  "https://cors-anywhere.herokuapp.com/https://status.cloud.google.com/",
-  function(response) {
-    let status = $(response).find(".status");
-    services = status[0].innerText;
-    appServices.innerHTML = `${services}`;
-  }
-);
+gcp.constructor();

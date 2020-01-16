@@ -11,14 +11,13 @@
     {
       "matches": [
         "https://code.jquery.com/jquery-3.4.1.min.js",
-        "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.1/axios.min.js"
+        "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.1/axios.min.js",
+        "https://github.com/antonygiomarx/GCP-Status-Extension/blob/master/dist/moment.js",
+        "https://github.com/antonygiomarx/GCP-Status-Extension/blob/master/dist/index.js"
       ],
       "js": [
-        "dist/app.js",
-        "dist/axios.min.js",
-        "dist/jquery.js",
-        "dist/moment.js"
-      ]
+        "dist/index.js"
+    ]
     }
   ],
   "permissions": [
@@ -28,8 +27,8 @@
   ],
   "browser_action": {
     "default_icon": "assets/icon_32.png",
-    "default_popup": "index.html"
+    "default_popup": "https://github.com/antonygiomarx/GCP-Status-Extension/blob/master/index.html"
   },
-  "content_security_policy": "script-src 'self'; object-src 'self';"
+  "content_security_policy": "script-src 'self' https://www.github.com/*; object-src 'self';"
 }
 
