@@ -1,4 +1,4 @@
-export class Gcp {
+export default class Gcp {
   constructor() {
     const appDate = document.getElementById("date");
     const appServices = document.getElementById("services");
