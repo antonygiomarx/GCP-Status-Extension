@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Google Cloud Platform Status</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="shortcut icon" href="assets/icon_32.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="img-fluid m-2 text-center">
+        <img src="assets/new-gcp-logo.png" />
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col text-center">
+          <h6 class="lead">Google Cloud Status</h6>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bg-success">
+      <div class="navbar navbar-expand-lg">
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled">
+              <li class="text-white">&#128197; <span id="date"></span></li>
+              <li>
+                <strong class="text-white"
+                  >&#128203;
+                  <span id="services"
+                    ></span
+                  ></strong
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-3">
+      <div class="container">
+        <div class="row">
+          <div class="col"></div>
+          <div class="col">
+            <a
+              href="https://status.cloud.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><button
+                type="button"
+                class="btn btn-outline-success btn-sm w-auto mb-3 p-1"
+              >
+                All services &#10140;
+              </button></a
+            >
+          </div>
+          <div class="col"></div>
+        </div>
+      </div>
+      <div id="app"></div>
+    </div>
+    <script src="dist/jquery.js"></script>
+    <script src="dist/moment.js"></script>
+    <script src="dist/axios.min.js"></script>
+    <script src="dist/index.js"></script>
+  </body>
+</html>

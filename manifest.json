@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Google Cloud Platform Status",
+  "description": "The extension is intended to show the current status of Google Cloud Platform",
+  "version": "1.0",
+  "icons": {
+    "32": "assets/icon_32.png",
+    "128": "assets/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://code.jquery.com/jquery-3.4.1.min.js",
+        "https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.1/axios.min.js"
+      ],
+      "js": [
+        "dist/app.js",
+        "dist/axios.min.js",
+        "dist/jquery.js",
+        "dist/moment.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "storage"
+  ],
+  "browser_action": {
+    "default_icon": "assets/icon_32.png",
+    "default_popup": "index.html"
+  },
+  "content_security_policy": "script-src 'self'; object-src 'self';"
+}
+
